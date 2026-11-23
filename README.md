@@ -6,7 +6,7 @@ A 4-player board-and-minigame party game made in Unity. The words used throughou
 
 The core rules are built and tested. You can watch 4 CPU Players play a full 10-Round Match on the Tropical Board, drawn with simple shapes. Minigames are placeholders for now: the results are random, but Players with a higher Difficulty win more often.
 
-## One-time setup
+## Open it in Unity
 
 1. **Install Git LFS** (Git's add-on for large art and audio files). Run this once on your PC:
    ```bash
@@ -16,40 +16,34 @@ The core rules are built and tested. You can watch 4 CPU Players play a full 10-
    ```bash
    git clone https://github.com/jorsky/Remake_party.git
    ```
-3. **Create the Unity project files:**
-   1. In Unity Hub, click **New project**, pick **Universal 3D**, and name it `RemakeParty`. Save it anywhere except inside the repo folder.
-   2. Wait for Unity to finish opening the project, then close Unity.
-   3. Copy the `Assets`, `Packages` and `ProjectSettings` folders from that new project into the repo folder. If asked, merge the folders; don't replace them.
-   4. In Unity Hub, click **Add → Add project from disk**, select the repo folder, and open it.
+3. **Add it to Unity Hub:** click **Add → Add project from disk** and select the `Remake_party` folder.
+   - If Hub says the editor version is missing, pick the Unity 6 version you have installed and click **Change version**.
+4. **Open it.** The first time, Unity downloads its packages and runs a setup script. That takes a few minutes and does two things:
+   - sets up the Universal Render Pipeline,
+   - creates and opens `Assets/Scenes/Main.unity`, with the Match already in it.
+5. Press **Play**.
 
-## See it play
+If the Main scene doesn't open by itself, choose **Remake Party → Open Main Scene** from the top menu.
 
-1. Open `Assets/Scenes/SampleScene`.
-2. Add the Match to the scene:
-   1. Choose **GameObject → Create Empty** and rename the new object `Match`.
-   2. In the Inspector, click **Add Component** and choose **Match Director**.
-3. Press **Play**.
-
-**Settings on the Match Director:**
+**Settings:** click the `Match` object in the Hierarchy.
 - Set each CPU Player's Difficulty: Easy, Normal or Hard.
 - Set a **Seed** (any number except 0) to replay the exact same Match. Leave it at 0 to get a different Match each time.
 - Use the **Speed** slider in the top left, during play, to fast-forward.
-
-After step 2, save the scene with **Ctrl+S**.
 
 ## Run the tests
 
 1. Choose **Window → General → Test Runner → EditMode**.
 2. Click **Run All**. Every test should go green.
 
-## Your first commit from Unity
+## After the first open
 
-Once the project opens without errors, commit:
-- the new `.meta` files Unity created,
-- the `Packages` folder,
-- the `ProjectSettings` folder.
+Unity creates a few new files:
+- `Assets/Scenes/Main.unity`,
+- the `Assets/Settings` folder,
+- `Packages/packages-lock.json`,
+- extra files in `ProjectSettings`.
 
-The `.gitignore` already leaves out Unity's large generated folders, such as `Library`.
+Commit them all so the project opens the same way on any computer.
 
 ## Where things live
 
