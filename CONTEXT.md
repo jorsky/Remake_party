@@ -30,6 +30,15 @@ An effect triggered by an Event Space, such as Tide Shift.
 **Tide Shift**:
 The Event that moves the Crown Space to a new spot on the Board.
 
+**Coconut Drop**:
+The Event that takes 5 Coins from every Player.
+
+**Swap Current**:
+The Event that swaps the triggering Player's position with a random other Player.
+
+**Turn-Order Roll**:
+The Safe Die roll every Player makes at the start of a Match; the highest Roll takes the first Turn.
+
 **Crown Space**:
 The one Space where a Player can buy a Crown. It moves to a new spot on the Board after each purchase.
 
@@ -67,7 +76,7 @@ _Avoid_: Backroll, minus roll
 The currency Players earn and lose on the Board and in Minigames, spent to buy Crowns.
 
 **Crown**:
-The item a Player buys for 20 Coins when they pass or stop on the Crown Space. The Player with the most Crowns at the end of the Match wins.
+The item a Player buys for 20 Coins when they pass or stop on the Crown Space, moving forward or backward. The Player with the most Crowns at the end of the Match wins.
 _Avoid_: Star
 
 **Minigame**:
@@ -88,5 +97,4 @@ A short action game played between Rounds whose result feeds back into the Board
 
 ## Flagged ambiguities
 
-- Not yet decided whether passing the **Crown Space** while moving backward lets a Player buy a **Crown**.
-- Not yet decided whether **Tide Shift** is the only **Event** in the core version.
+- How a **Minigame** is chosen and introduced is not yet confirmed.
