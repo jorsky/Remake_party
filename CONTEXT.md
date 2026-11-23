@@ -95,6 +95,6 @@ A short action game played between Rounds whose result feeds back into the Board
 - **Minigame** payout by placing: 15 / 8 / 4 / 0 **Coins**
 - The core version has 10 **Minigames**: the first 3 are polished before the other 7 are added
 
-## Flagged ambiguities
-
-- How a **Minigame** is chosen and introduced is not yet confirmed.
+- Moving backward retraces the **Player**'s own path; with no path left to retrace (e.g. a **Negative Roll** on the first **Turn**), they step back along the **Board**'s main loop
+- Stopping on the **Crown Space** replaces that Space's own effect
+- The **Crown Space** always moves to a **Gain Space** that nobody is standing on
